@@ -120,6 +120,7 @@ const UsersForm = ({ addUsers, userEdit, updateUser, deselecUser }) => {
         <button className="buttonForm">
           {userEdit !== null ? "Update" : "Add new user"}
         </button>
+<br/>
         {userEdit !== null && (
           <button className="buttonForm" onClick={deselecUser} type="button">
             {" "}
