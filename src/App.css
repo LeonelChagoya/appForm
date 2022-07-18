@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+h1 {
+  display: flex;
+}
+.usersTop {
+  display: flex;
+  justify-content: space-between;
+}
+.usersList {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.userConteiner {
+  position: relative;
+  display: flex;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  justify-content: center;
+}
+.userCard {
+  border: 1px solid #e5e5e5;
+  width: 350px;
+  height: 280px;
+  display: grid;
+  position: relative;
+  justify-items: start;
+  padding: 0.5rem;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 0;
+}
+h5 {
+  margin: 0;
+}
+
+.userCard > span {
+  color: #e5e5e5;
+}
+.buttonCard {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.buttonDelete {
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  color: white;
+  background: #d93f3f;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.buttonEdit {
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  color: white;
+  background: #3fa1d9;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.open {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0px;
+  border-radius: 2em;
+  background-color: #18c8c2;
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  font-size: 25px;
+}
+
+.modalConteiner {
+  border-radius: 5px;
+  padding: 2%;
+  position: relative;
+  width: 80%;
+  max-width: 350px;
+  height: 80%;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.topForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.modalToClose {
+  text-decoration: none;
+  width: 25px;
+  background: red;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.listForm {
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  background-color: #0000005d;
+  display: flex;
+  transition: 0.5s;
+  transform: translate(100%);
+  z-index: 1;
+}
+
+.listForm:target {
+  transform: translate(0);
+}
+
+.inputForm {
+  color: #3b3b3b;
+  width: 280px;
+  height: 25px;
+  background: #c3c1c13d;
+  font-size: 15px;
+  border: 1px solid #c3c1c1;
+  border-radius: 6px;
+}
+.inputConteiner {
+  font-size: 16px;
+  display: contents;
+}
+.buttonForm {
+  width: 100%;
+  font-size: 20px;
+  height: 30px;
+  background: #3fa1d9;
+  border: none;
+  color: white;
+}
