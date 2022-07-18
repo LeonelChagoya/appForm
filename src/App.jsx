@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import UsersForm from "./components/UsersForm";
 import UsersList from "./components/UsersList";
+import swal from "sweetalert";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -21,7 +22,7 @@ function App() {
   };
 
   const addUsers = (newUsers) => {
-    alert("Añadiendo");
+     swal("Adding");
     console.log(newUsers);
     axios
       .post("https://users-crud1.herokuapp.com/users/", newUsers)
@@ -34,14 +35,14 @@ function App() {
   };
 
   const deleteUser = (id) => {
-    alert("eliminando");
+    swal("Eliminating");
     axios
       .delete(`https://users-crud1.herokuapp.com/users/${id}/`)
       .then(() => getUsers());
   };
   const deselecUser = () => setUserEdit(null);
   const updateUser = (userUpdated) => {
-    alert("actualizando");
+    swal("Updating");
     axios
       .put(
         `https://users-crud1.herokuapp.com/users/${userUpdated.id}/`,
